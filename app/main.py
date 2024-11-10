@@ -1,5 +1,5 @@
 class Deck:
-    def init(self, row: int, column: int, is_alive: bool = True) -> None:
+    def __init__(self, row: int, column: int, is_alive: bool = True) -> None:
         self.row = row
         self.column = column
         self.is_alive = is_alive
@@ -9,7 +9,7 @@ class Deck:
 
 
 class Ship:
-    def init(self, start: int, end: int, is_drowned: bool = False) -> None:
+    def __init__(self, start: int, end: int, is_drowned: bool = False) -> None:
         self.decks = []
         self.is_drowned = is_drowned
 
