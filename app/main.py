@@ -37,10 +37,10 @@ class Ship:
 
 
 class Battleship:
-    def __init__(self, ships: list):
+    def __init__(self, ships: list) -> None:
         self.field = {}
         self.ships = []
-        
+
         # Place ships on the field
         for ship_coords in ships:
             start, end = ship_coords
